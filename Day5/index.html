@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- <body>
+
+    <button>Click here</button>
+
+
+ <a href="abes.ac.in">ABES Website</a>
+    <button onclick="display()">Change Link</button> -->
+    <!-- <button onclick="display()">CLICK</button>
+     <p></p> -->
+    <!-- <p></p>
+    <p></p> -->
+    
+    
+    <!-- <script>
+    //   let p1=document.querySelectorAll('p');
+    //     let display=()=>{
+    //         p1[0].innerHTML="Updated";
+    //         p1[0].style.backgroundColor='orange';
+            
+    //         p1[1].innerHTML="Updated";
+    //         p1[1].style.backgroundColor='wheat';
+   
+            
+    //         p1[2].innerHTML="Updated";
+    //         p1[2].style.backgroundColor='green';
+   
+    //     } 
+        let p1=document.querySelector('a');
+        let b=true;
+        let display=()=>{
+            if(b){
+                p1.setAttribute('href','https://aktu.ac.in');
+                p1.innerText("Aktu Website");
+                b=false;
+            }
+            else{
+                p1.setAttribute('href','https://aktu.ac.in');
+                p1.innerText("Aktu Website");
+                b=true;
+            }
+            
+        }
+    </script> 
+        <script>
+        // let p1=document.querySelector("a");
+        // let b = true;
+        // let display =()=>{
+        //   if(b){
+        //   p1.setAttribute('href','https://aktu.ac.in');
+        //   p1.innerText = "AKTU Website";
+        //   b=false;
+        // }
+        // else{
+        //   p1.setAttribute('href','https://abes.ac.in');
+        //   p1.innerText="ABES Website";
+        //   b=true;
+        // }
+        // }
+        // let display=()=>{
+
+        // const h1=document.createElement("h1");
+        // h1.textContent="I am in heading"
+
+        // let b =document.querySelector("body")
+        // b.appendChild(h1);
+        // }
+        let handleclick=()=>{
+            alert("new function");
+        }
+        let btn=document.querySelector('button');
+        // btn.addEventListener('click',()=>alert('hello'));
+        btn.addEventListener('click',handleclick);
+  
+      </script>
+  
+</body> -->
+<input type="text" id="myinput" placeholder="type here..">
+  <p class="keypressed">KeyPressed</p>
+  <script>
+    const handlekeypress = (event) => {
+      document.querySelector('.keypressed').textContent = event.target.value;
+    }
+
+    let myinput = document.getElementById('myinput');
+    myinput.addEventListener('keydown', handlekeypress); 
+  </script>
+</body>
+
+</html>
