@@ -1,0 +1,47 @@
+.count-app{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #c9f6c3;
+  background-size: 100%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0);
+}
+.count-disp{
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #ddd;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0);
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-left: 23%;
+  color: black;
+}
+.count-body{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.count-btn{
+  width: 50%;
+  height: 40px;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+}
+.count-btn:hover{
+  background-color: #3e8e41;
+  color: aliceblue;  
+}
