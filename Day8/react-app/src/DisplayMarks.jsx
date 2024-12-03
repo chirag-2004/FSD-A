@@ -1,5 +1,4 @@
 import Marks from './Marks.jsx'
-
 const DisplayMarks = () => {
     const students = [
         {m1:81, m2:85, m3:82},
