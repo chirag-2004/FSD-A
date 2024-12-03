@@ -1,13 +1,20 @@
-import React from 'react'
-// import CounterApp from './components/CounterApp'
-import ImageEditor from './components/ImageEditor'
+import CounterApp from "./components/CounterApp";
+import ImageApp from "./components/ImageApp";
+import MainLayout from "./components/MainLayout";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 const App = () => {
   return (
     <div>
-      {/* <CounterApp/> */}
-      <ImageApp/>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<MainLayout />}>
+            <Route path="/counter" element={<CounterApp />} />
+            <Route path="/image" element={<ImageApp />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

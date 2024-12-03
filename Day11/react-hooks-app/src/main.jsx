@@ -1,10 +1,13 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './App.jsx' 
-import ImageEditor from './components/ImageEditor.jsx'
+import './index.css'
+import App from './App.jsx'
+// import CounterApp from './components/CounterApp.jsx'
+// import ImageApp from './components/ImageApp.jsx'
+
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <ImageEditor/>
-    {/* <App /> */}
+    <App/>
   </StrictMode>,
 )
