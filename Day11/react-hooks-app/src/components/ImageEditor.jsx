@@ -13,7 +13,7 @@ const ImageEditor = () => {
         style={{
             height: height,
             width : width,
-            transform: `rotate(${rotation}deg`)
+            transform: `rotate(${rotation}deg)`
         }}
         />
         
