@@ -1,22 +1,60 @@
-import React from 'react'
-import { Link,Outlet } from 'react-router-dom'
-import './MainLayout.css'
+import React from 'react';
+import { Link, Outlet } from 'react-router-dom';
+
 const MainLayout = () => {
   return (
-    <div>
-        <nav>
-            <ul>
-                <li>
-                    <Link to="/Login">Login</Link>
-                </li>
-                <li>
-                    <Link to="/Register">Register</Link>
-                </li>
-            </ul>
-        </nav>
-        <Outlet/>
+    <div style={styles.layout}>
+      <nav style={styles.nav}>
+        <ul style={styles.navList}>
+          <li style={styles.navItem}>
+            <Link to="./login" style={styles.link}>Login</Link>
+          </li>
+          <li style={styles.navItem}>
+            <Link to="./register" style={styles.link}>Register</Link>
+          </li>
+        </ul>
+      </nav>
+      <div style={styles.outlet}>
+        <Outlet />
+      </div>
     </div>
-  )
-}
+  );
+};
+
+const styles = {
+  layout: {
+    fontFamily: '"Arial", sans-serif',
+    minHeight: '100vh',
+    background: 'linear-gradient(135deg,rgb(208, 215, 247) 0%,rgb(217, 187, 247) 100%)',
+    color: '#ffffff',
+  },
+  nav: {
+    padding: '10px 20px',
+    background: '#fff',
+    boxShadow: '0 2px 4px rgba(23, 21, 21, 0.1)',
+  },
+  navList: {
+    listStyle: 'none',
+    display: 'flex',
+    gap: '20px',
+    margin: 0,
+    padding: 0,
+  },
+  navItem: {
+    fontSize: '16px',
+  },
+  link: {
+    textDecoration: 'none',
+    color: '#667eea',
+    fontWeight: 'bold',
+    transition: 'color 0.3s ease',
+  },
+  linkHover: {
+    color: '#764ba2',
+  },
+  outlet: {
+    padding: '20px',
+  },
+};
 
 export default MainLayout;
